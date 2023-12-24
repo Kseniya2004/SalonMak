@@ -1,0 +1,37 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Контакты';
+  - var description = 'Страница контакты';
+  - var pageClass = 'index';
+  
+
+
+block content
+    .contacts.wrapper-section
+        img(src="../assets/img/background/bg-contacts.png").contacts-background.img-background
+        .container
+            .contacts-wrapper
+                .contacts-header
+                    h1.contacts-header__title.title Как нас найти?
+                    p.contacts-header__desc А очень просто!
+                .contacts-content 
+                    .contacts-content__list
+                        .contacts-content__item 
+                            span.contacts-content__title Наш адрес: 
+                            a(href="https://yandex.ru/maps/-/CLXkv9Q").contacts-content__desc г. Орехово-Зуево, ул. 1905 года, д. 1А
+                        .contacts-content__item 
+                            span.contacts-content__title График работы:
+                            p.contacts-content__desc с понедельника по субботу с 10.00 до 20.00, в воскресенье с 10.00 до 19.00 
+                        .contacts-content__item 
+                            span.contacts-content__title Телефоны:
+                            p.contacts-content__desc 
+                                a(href="tel:+74964150683") 8 (496) 415-06-83<br> 
+                                a(href="tel:+79265382856")  8 (926) 538-28-56
+                        .contacts-content__item 
+                            span.contacts-content__title Электронная почта: 
+                            a(href="mailto:salonmakk@yandex.ru").contacts-content__desc salonmakk@yandex.ru
+                    .contacts-content__map-wrapper
+                        .contacts-content__map
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae4b3e9cd6479fb6d992faac12460f17b805b5e050ade97094019fa6b3c212956&amp;width=100%&amp;height=458&amp;lang=ru_RU&amp;scroll=true"></script>
+                                

@@ -1,0 +1,66 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Услуги';
+  - var description = 'Страница контакты';
+  - var pageClass = 'index';
+  
+
+
+block content
+  .services-section.wrapper-section
+    img(src="../assets/img/background/bg-contacts.png").services-background.img-background
+    .container
+        .services-wrapper
+          .services-header
+            h1.services-header__title.title Услуги
+            .services-header__search-block 
+              input(type="text" placeholder="Найти услугу").services-header__search-input
+              .services-header__search-button.btn Найти
+          .services-content 
+            .services__content-list 
+              a(href="/services.html").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_1.png")
+                .services__item-content 
+                  .services__item-title Уход за волосами
+              a(href="#").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_2.png")
+                .services__item-content 
+                  .services__item-title Ногтевой сервис
+              a(href="#").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_3.png")
+                .services__item-content 
+                  .services__item-title Продукция по косметологии
+              a(href="#").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_4.png")
+                .services__item-content 
+                  .services__item-title Косметология
+              a(href="#").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_5.png")
+                .services__item-content 
+                  .services__item-title Продукция для волос
+              a(href="#").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_6.png")
+                .services__item-content 
+                  .services__item-title Продукция для лица
+              a(href="#").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_7.png")
+                .services__item-content 
+                  .services__item-title Массаж
+              a(href="#").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_8.png")
+                .services__item-content 
+                  .services__item-title Педикюр
+              a(href="/products.html").services__content-item
+                .services__item-img
+                  img(src="../assets/img/services/services_9.png")
+                .services__item-content 
+                  .services__item-title Продукция

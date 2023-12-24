@@ -1,0 +1,37 @@
+.services-header{
+    @apply lg:flex lg:justify-between lg:items-baseline
+}
+.services-header__search-block{
+    @apply flex items-end
+}
+.services-content{
+    @apply mt-[115px]
+}
+.services-header__search-input{
+    width: -webkit-fill-available;
+    @apply text-darkbej rounded-tr-[20px] rounded-bl-[20px] h-fit py-[14px] pl-5 md:min-w-[465px]
+    mr-[12px]
+}
+
+.services-section{
+    .services__content-list {
+        @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[50px] lg:gap-y-0 gap-[70px]
+    }
+    .services__content-item{
+        transition: all 0.3s ease-in-out;
+        @apply bg-awc grid grid-cols-2 rounded-tl-[60px] rounded-br-[60px] pr-[44px] min-h-[220px]
+        hover:bg-darkbej hover:text-awc h-fit
+    }
+    .services__content-item:nth-child(odd){
+        @apply lg:mt-[80px]
+    }
+    .services__item-img{
+        @apply max-w-[303px] max-h-[239px] mt-[-53px] overflow-hidden self-end
+    }
+    .services__item-img img{
+        @apply h-full 
+    }
+    .services__item-content{
+        @apply self-center text-24px lg:text-32px font-medium leading-[120%];
+    }
+}

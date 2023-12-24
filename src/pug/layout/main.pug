@@ -1,0 +1,46 @@
+include ../mixins/mixins
+block variables
+
+doctype html
+html(lang='ru')
+  head
+    
+    meta(charset='utf-8')
+    title #{title}
+    meta(name="description", content=description)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no")
+    script(src="https://unpkg.com/imask")
+    block head
+
+  body(class="debug-screens")
+    .wrapper
+      .wrapper-page
+        include ../includes/header
+        .wrapper-content
+          block content
+        include ../includes/footer
+    .img-flowers
+      img.img-flower.top-0(src="../assets/img/flowers/1.png")
+      img.img-flower.bottom-0.right-0(src="../assets/img/flowers/4.png")
+    .modal-menu__wrapper.close(id='header__info-burger') 
+      .modal-menu__block(id='burger__menu-list') 
+        button.modal-menu__close(type="button" id='burger__menu-close') 
+          img(src="../assets/img/close.svg")
+        .modal-menu__section
+          .modal-menu__item
+            a.modal-menu__link(href="/services-section.html") Услуги
+            a.modal-menu__link(href="/prices.html") Цены
+            a.modal-menu__link(href="/about.html") О нас
+            a.modal-menu__link(href="/contacts.html") Контакты
+          .modal-menu__item.networks
+            a.modal-menu__netw(href="#") 
+                img(src="../assets/img/vk.svg")
+            a.modal-menus__nwt(href="#") 
+                img(src="../assets/img/inst.svg")
+          .modal-menu__item.modal-menu__sheldule
+            p Пн-Сб с 10:00 до 20:00
+            p Вс с 10:00 до 19:00
+          .modal-menu__item
+            button(type="submit").modal-menu__btn Запись   
+    block script

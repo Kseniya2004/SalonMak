@@ -1,0 +1,51 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Продукция';
+  - var description = 'Страница контакты';
+  - var pageClass = 'index';
+  
+
+
+block content
+  .products.wrapper-section
+    img(src="../assets/img/background/bg-contacts.png").products-background.img-background
+    .container
+        .products-wrapper
+            .services-header
+                h1.services-header__title.title Средства ухода
+                .services-header__search-block 
+                    input(type="text" placeholder="Найти средство").services-header__search-input
+                    .services-header__search-button.btn Найти
+            .products-content 
+                .products__content-list 
+                    a(href="/products-catalog.html").products__content-item
+                        .products__item-img
+                            img(src="./assets/img/care-products/tovar_1.png")
+                        .products__item-content 
+                            .products__item-title Для слабых и поврежденных волос
+                    a(href="#").products__content-item
+                        .products__item-img
+                            img(src="./assets/img/care-products/tovar_2.png")
+                        .products__item-content 
+                            .products__item-title Серия для ежедневного использования
+                    a(href="#").products__content-item
+                        .products__item-img
+                            img(src="./assets/img/care-products/tovar_3.png")
+                        .products__item-content 
+                            .products__item-title Для слабых и поврежденных волос
+                    a(href="#").products__content-item
+                        .products__item-img
+                            img(src="./assets/img/care-products/tovar_1.png")
+                        .products__item-content 
+                            .products__item-title Для слабых и поврежденных волос
+                    a(href="#").products__content-item
+                        .products__item-img
+                            img(src="./assets/img/care-products/tovar_2.png")
+                        .products__item-content 
+                            .products__item-title Серия для ежедневного использования
+                    a(href="#").products__content-item
+                        .products__item-img
+                            img(src="./assets/img/care-products/tovar_3.png")
+                        .products__item-content 
+                            .products__item-title Для слабых и поврежденных волос

@@ -1,0 +1,9 @@
+.footer-wrapper {
+    @apply flex items-center py-[35px]
+}
+.footer-wrapper__text {
+    @apply ml-[46px] text-12px sm:text-14px md:text-16px
+}
+.footer-wrapper__logo {
+    @apply max-w-[123px] max-h-[47px]
+}

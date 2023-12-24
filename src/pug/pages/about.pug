@@ -1,0 +1,53 @@
+extends ../layout/main
+
+block variables
+  - var title = 'О нас';
+  - var description = 'Страница контакты';
+  - var pageClass = 'index';
+  
+
+
+block content
+    .about.wrapper-section
+        img(src="../assets/img/background/bg-about.png").about-background.img-background
+        .container
+            .about-wrapper
+                .about-info
+                    .about-info__left
+                        h1.about-info__title.title О салоне  «Мак»
+                        .about-info__desc 
+                            span Добро пожаловать в мастерскую красоты и изящности, классики и креатива, великолепного стиля и элегантности!
+                            p Салон красоты «Мак» - это современная сказка, где все события разворачиваются по Вашему сценарию.
+                            p Студия сочетает в себе инновационные технологии с секретами красоты всех времен. Квалифицированные работники нашего салона всегда готовы вам помочь. Они постоянно совершенствуют свой профессионализм, чтобы вы выглядели роскошно не только когда выходите из нашего салона, но и когда находитесь дома, на работе, на отдыхе.
+                            p Мы всегда следим за всеми новинками в мире красоты, внедряем новые методы и технологии.
+                            p Любая процедура порадует Вас и ценой и безупречным результатом! 
+                    .about-info__right 
+                        .about-info__img-container
+                            img(src="../assets/img/Galya.png")                  
+                .about-gallery
+                    .main-about__content 
+                        .main-about__content-list(id="about-gallery") 
+                            .main-about__content-item.about_span_1(data-fancybox="gallery" href="../assets/img/about/about_1.png")
+                                img(src="../assets/img/about/about_1.png")
+                            .main-about__content-item(data-fancybox="gallery" href="../assets/img/about/about_2.png")
+                                img(src="../assets/img/about/about_2.png")
+                            .main-about__content-item(data-fancybox="gallery" href="../assets/img/about/about_3.png") 
+                                img(src="../assets/img/about/about_3.png")
+                            .main-about__content-item.no-visible(data-fancybox="gallery" href="../assets/img/about/about_4.png")
+                                img(src="../assets/img/about/about_4.png")
+                            .main-about__content-item.no-visible(data-fancybox="gallery" href="../assets/img/about/about_5.png")
+                                img(src="../assets/img/about/about_5.png")
+                            .main-about__content-item.about_span_2(data-fancybox="gallery" href="../assets/img/about/about-6.png")
+                                img(src="../assets/img/about/about-6.png")
+                            .main-about__content-item.about_span_1(data-fancybox="gallery" href="../assets/img/about/about_1.png")
+                                img(src="../assets/img/about/about_1.png")
+                            .main-about__content-item(data-fancybox="gallery" href="../assets/img/about/about_2.png") 
+                                img(src="../assets/img/about/about_2.png")
+                            .main-about__content-item(data-fancybox="gallery" href="../assets/img/about/about_3.png") 
+                                img(src="../assets/img/about/about_3.png")
+                            .main-about__content-item.no-visible(data-fancybox="gallery" href="../assets/img/about/about_4.png")
+                                img(src="../assets/img/about/about_4.png")
+                            .main-about__content-item.no-visible(data-fancybox="gallery" href="../assets/img/about/about_5.png")
+                                img(src="../assets/img/about/about_5.png")
+                            .main-about__content-item.about_span_2(data-fancybox="gallery" href="../assets/img/about/about-6.png")
+                                img(src="../assets/img/about/about-6.png")

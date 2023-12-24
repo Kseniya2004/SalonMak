@@ -1,0 +1,113 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Мастер';
+  - var description = 'Страница контакты';
+  - var pageClass = 'index';
+  
+
+
+block content
+    .master.wrapper-section
+        img(src="../assets/img/background/bg-master.png").master-background.img-background
+        .container
+            .master-wrapper
+                .master-header
+                    h1.master-header__title.title Белова Ирина
+                    p.master-header__desc Парикмахер-стилист, дизайнер по прическам
+                .master-content 
+                    .master-content__services 
+                        .master-content__services-img 
+                            img(src="../assets/img/master-detail.png")
+                        .master-content__services-left 
+                            span.master-content__services-tit  Предоставляемые услуги
+                            ul.master-content__services-list 
+                                li.master-content__services-item вечерние прически и укладки
+                                li.master-content__services-item свадебные прически
+                                li.master-content__services-item классические и креативные стрижки
+                                li.master-content__services-item стрижки горячими ножницами
+                                li.master-content__services-item все виды окрашивания
+                                li.master-content__services-item биологическая завивка и наращивание волос
+                            button(type="submit").master-content__services-btn Записаться к мастеру
+                            
+                    .master-content__info 
+                        span.master-content__info-title  Образование:
+                        p Закончила профессиональный лицей, после которого долго набиралась опыта. Обучалась колористике и в 2008 г. отучилась в Союзе парикмахеров, где закончила много авторских курсов лучших стилистов и познакомилась с Еленой Баклушенной (Преподаватель Академии по парикмахерскому искусству, заведущая кафедрой по причёскам из длинных волос, мастер международного класса, судья международной категории, тренер женской сборной России по парикмахерскому искусству, член всемирной Организации INTERCOIFFURE (Paris), многократный призёр международных и всесоюзных конкурсов). «Она меня поразила своими работами» — говорит Ирина и поэтому после обучения стала выполнять множество причесок из длинных волос и работать с невестами. В 2011 г. отучилась в академии «Долорес» на парикмахера-модельера. Многократный участник Чемпионатов по парикмахерскому искусству. Бронзовый призер Чемпионата на Кубок Губернатора Московской области. Опыт работы в салоне более 13 лет.
+                        span.master-content__info-title Пара слов о себе и своей профессии:
+                        p «В 2013 году я решила попробовать свои силы на чемпионатах по парикмахерскому искусству в самой зрелищной, на мой взгляд, номинации „Прическа новобрачной“. Все началось в Химках — 18 апреля, прошла отборочный тур в чемпионат Московской области и заняла там почетное 5 место. Затем в г. Одинцово 24 мая прошёл чемпионат на кубок губернатора по парикмахескому искусству. Я заняла почетное 7 место из 22 сильнейших работ в своей номинации! Сейчас готовлюсь к чемпионату России, который пройдет в Гостинном Дворе в Москве 29–30 сентября. Я очень рада, что работаю в салоне МАК, считаю его лучшим салоном в городе! Мне нравится работать с клиентами — ведь это новые знакомства, общение, мнение со стороны, а в таком салоне это еще приятнее. Я работаю в МАКе с 2012 года и с первого дня как я туда вошла — я счастлива!!!»
+                    .master-content__certificates
+                        h2.master-content__certificates-title.subtitle Сертификаты мастера:
+                        .master-content 
+                            .swiper.Swiper-master
+                                .swiper-wrapper(id="master-gallery")  
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_1.png")  
+                                        img(src="../assets/img/cert/cert_1.png")   
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_2.png") 
+                                        img(src="../assets/img/cert/cert_2.png") 
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_3.png") 
+                                        img(src="../assets/img/cert/cert_3.png") 
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_4.png") 
+                                        img(src="../assets/img/cert/cert_4.png")
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_5.png") 
+                                        img(src="../assets/img/cert/cert_5.png") 
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_1.png") 
+                                        img(src="../assets/img/cert/cert_1.png")   
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_2.png") 
+                                        img(src="../assets/img/cert/cert_2.png") 
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_3.png") 
+                                        img(src="../assets/img/cert/cert_3.png") 
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_4.png") 
+                                        img(src="../assets/img/cert/cert_4.png")
+                                    .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/cert/cert_5.png")
+                                        img(src="../assets/img/cert/cert_5.png")
+
+
+                    .master-content__works
+                        h2.master-content__works-title.subtitle Работы мастера:
+                        .master-content__works-list 
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png")
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png").work_dt.work_mb
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png")
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png").work_mb
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png").work_dt
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png").work_mb
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png")
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png").work_dt.work_mb
+                                img(src="../assets/img/works-master/work-master.png")
+                            .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png")
+                                img(src="../assets/img/works-master/work-master.png")
+
+            .products-catalog__modal-wrapper(id="master-empty")
+                .products-catalog__modal-title Записаться в салон «Мак»
+                .products-catalog__modal-group
+                    label.products-catalog__modal-label(for="masters") Выберите мастера
+                    select.products-catalog__modal-selected(name="select" id="masters") 
+                        option(value="value1") Генералова Галина
+                        option(value="value2") Белова Ирина
+                        option(value="value3") Иванченко Марина
+                .products-catalog__modal-group.phone
+                    label.products-catalog__modal-label(for="user-phone") Ваш контактный номер
+                    input.products-catalog__modal-number(type="text" id="user-phone" placeholder="+7 (___) ___ - __ - __")
+                .products-catalog__modal-group.datetime
+                    label.products-catalog__modal-label(id="user-datetime") Удобные дата и время самовывоза
+                    .products-catalog__modal-datetime
+                        input(type="date" id="user-datetime").products-catalog__modal-date
+                        input(type="time" id="user-datetime")               
+                .products-catalog__modal-group.checkbox
+                    label.products-catalog__modal-checkbox 
+                        p Согласие с 
+                            a(href="#")  политикой конфиденциальности
+                            |  и 
+                            a(href="#")  обработкой персональных данных
+                        input(type="checkbox" checked="checked")
+                        span.checkmark
+                .products-catalog__modal-empty Записаться
+
+            

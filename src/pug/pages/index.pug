@@ -1,0 +1,263 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Главная';
+  - var description = 'Главная страница';
+  - var pageClass = 'index';
+  
+
+
+block content
+  section
+    .banner-wrapper 
+      .banner-wrapper__img-container
+        img(src="../assets/img/banner.png", alt="banner")      
+      .banner-wrapper__content
+        .container
+          p.banner-wrapper__text Мастерская красоты и изящности
+          h1.banner-wrapper__title Будь прекрасной.<br> Будь собой
+  
+  section
+    .container
+      .swiper-wrapper 
+        .swiper.mySwiper(pagination="true" pagination-clickable="true" navigation="true" space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false")
+          .swiper-wrapper  
+            .swiper-slide
+              .swiper-slide__container
+                .swiper-slide__wrapper.border-radius
+                  .swiper-slide__content 
+                    span.swiper-slide__title Косметические маски на природной основе
+                    a(href="#").swiper-slide__btn.btn Узнай больше
+                  .swiper-slide__img
+                    img(src="../assets/img/swiper/swiper-img.png", alt="1")
+            .swiper-slide
+              .swiper-slide__container
+                .swiper-slide__wrapper.border-radius
+                  .swiper-slide__content 
+                    span.swiper-slide__title Косметические маски на природной основе
+                    a(href="#").swiper-slide__btn.btn Узнай больше
+                  .swiper-slide__img
+                    img(src="../assets/img/swiper/swiper-img.png", alt="1")
+            .swiper-slide
+              .swiper-slide__container
+                .swiper-slide__wrapper.border-radius
+                  .swiper-slide__content 
+                    span.swiper-slide__title Косметические маски на природной основе
+                    a(href="#").swiper-slide__btn.btn Узнай больше
+                  .swiper-slide__img
+                    img(src="../assets/img/swiper/swiper-img.png", alt="1")      
+          img(src="../assets/img/swiper/next.svg", alt="3").swiper-button-next          
+          img(src="../assets/img/swiper/prev.svg", alt="3").swiper-button-prev
+          .swiper-pagination
+  
+  section
+    .container 
+      .main-services-wrapper 
+        .main-services-left
+          .main-services-left__list 
+            .main-services-left__item.border-radius
+              .main-services-left__item-img 
+                img(src="./assets/img/women.png", alt="")
+              .main-services-left__item-title Уход за волосами
+              .main-services-left__item-desc 
+                p Курс SPA-ухода включающий в себя множество процедур
+            .main-services-left__item.border-radius
+              .main-services-left__item-img 
+                img(src="./assets/img/relax.png", alt="")
+              .main-services-left__item-title Уход за волосами
+              .main-services-left__item-desc 
+                p Курс SPA-ухода включающий в себя множество процедур
+            .main-services-left__item.border-radius
+              .main-services-left__item-img 
+                img(src="./assets/img/spa.png", alt="")
+              .main-services-left__item-title Уход за волосами
+              .main-services-left__item-desc 
+                p Курс SPA-ухода включающий в себя множество процедур
+            .main-services-left__item.border-radius
+              .main-services-left__item-img 
+                img(src="./assets/img/manicure.png", alt="")
+              .main-services-left__item-title Уход за волосами
+              .main-services-left__item-desc 
+                p Курс SPA-ухода включающий в себя множество процедур
+
+        .main-services-right 
+          .main-services-right__content 
+            .main-services-right__content-title.title Лучшие услуги для тебя
+            .main-services-right__content-desc 
+              p
+                | Дорогие мои, это «Меню» для Вас составлялось нашими специалистами тщатель-
+                | нейшим образом. Подбирая косметику и составляя процедуры, мы старались
+                | учитывать все составляющие: Ваш тип кожи, Ваш возраст и конечный результат от процедуры.
+                |Косметика, которую мы выбрали для Вас, произведена на основе геля из водорослей (бурых водорослей Ламинарии японика, Фукуса пузырчатого и сине-зеленой)
+            a(href="#").main-services-right__content-btn.btn Ещё больше услуг
+  
+  section 
+    .masters-main
+      .container 
+        .masters-top 
+          .master-top__title.title Мастера            
+          a(href="/masters.html").master-top__btn.btn Все мастера
+        .masters-bottom
+          .masters-bottom__list 
+            .master__item
+              .master__item-img
+                img(src="./assets/img/masters/1_Генералова Галина.jpg")
+              a(href="/master.html").master__item-content 
+                .master__item-title Генералова Галина
+                .master__item-desc 
+                  p Парикмахер-стилист, визажист, директор салона красоты "МАК"
+            .master__item
+              .master__item-img
+                img(src="./assets/img/masters/3_Белова Ирина.jpg")
+              a(href="/master.html").master__item-content 
+                .master__item-title Белова Ирина
+                .master__item-desc 
+                  p Парикмахер-стилист, визажист, директор салона красоты "МАК"
+            .master__item
+              .master__item-img
+                img(src="./assets/img/masters/2_Тяпкина Светлана.jpg")
+              a(href="/master.html").master__item-content 
+                .master__item-title Тяпкина Светлана
+                .master__item-desc 
+                  p Парикмахер-стилист, визажист, директор салона красоты "МАК"
+            
+
+  section 
+    .care-products
+      .container 
+        .care-product__header 
+          .care-product__header-title.title Средства ухода 
+        .care-product__content
+          .care-product__content-list 
+            .care-product__content-item
+              .care-product__item-img
+                img(src="./assets/img/care-products/tovar_1.png")
+              .care-product__item-content 
+                .care-product__item-title Для слабых и поврежденных волос
+            .care-product__content-item
+              .care-product__item-img
+                img(src="./assets/img/care-products/tovar_2.png")
+              .care-product__item-content 
+                .care-product__item-title Серия для ежедневного использования
+            .care-product__content-item
+              .care-product__item-img
+                img(src="./assets/img/care-products/tovar_3.png")
+              .care-product__item-content 
+                .care-product__item-title Для слабых и поврежденных волос
+            
+            .care-product__content-item
+              .care-product__item-img
+                img(src="./assets/img/care-products/tovar_1.png")
+              .care-product__item-content 
+                .care-product__item-title Для слабых и поврежденных волос
+            .care-product__content-item
+              .care-product__item-img
+                img(src="./assets/img/care-products/tovar_2.png")
+              .care-product__item-content 
+                .care-product__item-title Серия для ежедневного использования
+            .care-product__content-item
+              .care-product__item-img
+                img(src="./assets/img/care-products/tovar_3.png")
+              .care-product__item-content 
+                .care-product__item-title Для слабых и поврежденных волос
+              
+  section 
+    .gallery 
+      .gallery__header 
+        .container
+          .gallery__header-title.title Галерея
+      .gallery__content.container-swiper 
+          .swiper.Swiper-gallery
+            .swiper-wrapper(id="main-gallery")  
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_1.png")  
+                img(src="../assets/img/gallery/gallery_1.png")   
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_2.png") 
+                img(src="../assets/img/gallery/gallery_2.png") 
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_3.png") 
+                img(src="../assets/img/gallery/gallery_3.png") 
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_4.png") 
+                img(src="../assets/img/gallery/gallery_4.png")
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_5.png") 
+                img(src="../assets/img/gallery/gallery_5.png") 
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_1.png") 
+                img(src="../assets/img/gallery/gallery_1.png")   
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_2.png") 
+                img(src="../assets/img/gallery/gallery_2.png") 
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_3.png") 
+                img(src="../assets/img/gallery/gallery_3.png") 
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_4.png") 
+                img(src="../assets/img/gallery/gallery_4.png")
+              .swiper-slide(data-fancybox="sw-gallery" href="../assets/img/gallery/gallery_5.png")
+                img(src="../assets/img/gallery/gallery_5.png")
+  
+  section 
+    .present 
+      .present__header 
+        .container
+          .present__header-title.title Подарки для Вас
+      .present__content.container-swiper 
+        .swiper.Swiper-present
+            .swiper-wrapper  
+              .swiper-slide 
+                img(src="../assets/img/present/present_1000.png")
+              .swiper-slide 
+                img(src="../assets/img/present/present_2000.png")
+              .swiper-slide 
+                img(src="../assets/img/present/present_3000.png")
+              .swiper-slide 
+                img(src="../assets/img/present/present_5000.png")
+      .present__footer
+        a(href="#").present__footer__btn.btn Приобрести сертификат
+                          
+  section 
+    .main-about   
+      .container
+        .main-about__header 
+          .main-about__header-title.title Красиво внутри и снаружи
+        .main-about__content 
+          .main-about__content-list(id="main-about__gallery") 
+            .main-about__content-item.about_span_1(data-fancybox="gallery" href="../assets/img/about/about_1.png")
+              img(src="../assets/img/about/about_1.png")
+            .main-about__content-item(data-fancybox="gallery" href="../assets/img/about/about_2.png")
+              img(src="../assets/img/about/about_2.png")
+            .main-about__content-item(data-fancybox="gallery" href="../assets/img/about/about_3.png") 
+              img(src="../assets/img/about/about_3.png")
+            .main-about__content-item.no-visible(data-fancybox="gallery" href="../assets/img/about/about_4.png")
+              img(src="../assets/img/about/about_4.png")
+            .main-about__content-item.no-visible(data-fancybox="gallery" href="../assets/img/about/about_5.png")
+              img(src="../assets/img/about/about_5.png")
+            .main-about__content-item.about_span_2
+              img(src="../assets/img/about/about_6.png")
+              
+
+  section 
+    .main-contacts     
+      .container    
+        .main-contacts__header 
+          .contacts__header-title.title Приходите сегодня    
+        .main-contacts__content 
+          .main-contacts__left 
+            .main-contacts__left-info 
+              .main-contacts__left-item
+                .main-contacts__left-img 
+                  img(src="../assets/img/location.svg")
+                .main-contacts__left-text
+                  a(href="https://yandex.ru/maps/-/CLXkv9Q") г. Орехово-Зуево, ул. 1905 года, д. 1А.
+              .main-contacts__left-item
+                .main-contacts__left-img 
+                  img(src="../assets/img/clock.svg")
+                .main-contacts__left-text
+                  p Пн-Сб с 10:00 до 20:00 Вс с 10:00 до 19:00
+              .main-contacts__left-item
+                .main-contacts__left-img 
+                  img(src="../assets/img/phone.svg")
+                .main-contacts__left-text.phone  
+                  p 
+                    a.whitespace-nowrap(href="tel:+74964150683") 8 (496) 415-06-83<br> 
+                    a.whitespace-nowrap(href="tel:+79265382856")  8 (926) 538-28-56
+          .main-contacts__right 
+            .main-contacts__right-map 
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7683a57b2f4a1b688ab5f2e7e0862a5a6858164adc1345028126d74eddd8682c&amp;width=917&amp;height=540&amp;lang=ru_RU&amp;scroll=true"></script>
+          
+
+    

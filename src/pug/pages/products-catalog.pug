@@ -1,0 +1,90 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Продукция';
+  - var description = 'Страница контакты';
+  - var pageClass = 'index';
+  
+
+
+block content
+  .products-catalog.wrapper-section
+    img(src="../assets/img/background/bg-contacts.png").products-catalog__background.img-background
+    .container
+        .products-catalog__wrapper
+            .products-catalog__header
+                h1.products-catalog__title.title Для слабых и поврежденных волос                
+            .products-catalog__content 
+                .products-catalog__content-list 
+                    .products-catalog__content-item
+                        a(href="/service.html").products-catalog__item-img
+                            img(src="../assets/img/care-products/subproduct_1.png")
+                        .products-catalog__item-content 
+                            a(href="/service.html").products-catalog__item-title Шампунь глубокой очистки
+                            .products-catalog__item-info 
+                                .products-catalog__item-price 2 400 ₽ 
+                                button.products-catalog__item-empty(data-fancybox data-src="#empty") Заказать
+                    .products-catalog__content-item
+                        a(href="/service.html").products-catalog__item-img
+                            img(src="../assets/img/care-products/subproduct_2.png")
+                        .products-catalog__item-content 
+                            a(href="/service.html").products-catalog__item-title Шампунь глубокой очистки
+                            .products-catalog__item-info 
+                                .products-catalog__item-price 2 400 ₽ 
+                                button.products-catalog__item-empty(data-fancybox data-src="#empty") Заказать
+                    .products-catalog__content-item
+                        a(href="/service.html").products-catalog__item-img
+                            img(src="../assets/img/care-products/subproduct_3.png")
+                        .products-catalog__item-content 
+                            a(href="/service.html").products-catalog__item-title Шампунь глубокой очистки
+                            .products-catalog__item-info 
+                                .products-catalog__item-price 2 400 ₽ 
+                                button.products-catalog__item-empty(data-fancybox data-src="#empty") Заказать
+                    .products-catalog__content-item
+                        a(href="/service.html").products-catalog__item-img
+                            img(src="../assets/img/care-products/subproduct_1.png")
+                        .products-catalog__item-content 
+                            a(href="/service.html").products-catalog__item-title Шампунь глубокой очистки
+                            .products-catalog__item-info 
+                                .products-catalog__item-price 2 400 ₽ 
+                                button.products-catalog__item-empty(data-fancybox data-src="#empty") Заказать
+                    .products-catalog__content-item
+                        a(href="/service.html").products-catalog__item-img
+                            img(src="../assets/img/care-products/subproduct_2.png")
+                        .products-catalog__item-content 
+                            a(href="/service.html").products-catalog__item-title Шампунь глубокой очистки
+                            .products-catalog__item-info 
+                                .products-catalog__item-price 2 400 ₽ 
+                                button.products-catalog__item-empty(data-fancybox data-src="#empty") Заказать
+                    .products-catalog__content-item
+                        a(href="/service.html").products-catalog__item-img
+                            img(src="../assets/img/care-products/subproduct_3.png")
+                        .products-catalog__item-content 
+                            a(href="/service.html").products-catalog__item-title Шампунь глубокой очистки
+                            .products-catalog__item-info 
+                                .products-catalog__item-price 2 400 ₽ 
+                                button.products-catalog__item-empty(data-fancybox data-src="#empty") Заказать
+
+
+        .products-catalog__modal-wrapper(id="empty")
+            .products-catalog__modal-title Шампунь для слабых и поврежденных волос
+            .products-catalog__modal-img
+                img(src="../assets/img/care-products/subproduct_3.png")
+            .products-catalog__modal-group.phone
+                label.products-catalog__modal-label(for="user-phone") Ваш контактный номер
+                input.products-catalog__modal-number(type="text" id="user-phone" placeholder="+7 (___) ___ - __ - __")
+            .products-catalog__modal-group.datetime
+                label.products-catalog__modal-label(id="user-datetime") Удобные дата и время самовывоза
+                .products-catalog__modal-datetime
+                    input(type="date" id="user-datetime").products-catalog__modal-date
+                    input(type="time" id="user-datetime")
+            span.products-catalog__modal-text К этому времени заказ будет ожидать Вас в салоне «Мак» по адресу: г. Орехово-Зуево, ул. 1905 года, д. 1А
+            .products-catalog__modal-group.checkbox
+                label.products-catalog__modal-checkbox 
+                    p Согласие с 
+                        a(href="#")  политикой конфиденциальности
+                        |  и 
+                        a(href="#")  обработкой персональных данных
+                    input(type="checkbox" checked="checked")
+                    span.checkmark
+            .products-catalog__modal-empty Заказать

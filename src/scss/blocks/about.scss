@@ -1,0 +1,33 @@
+
+
+.about-info{
+    @apply grid gap-[45px] justify-items-center  grid-cols-1;
+}
+.about-info__desc {
+    @apply text-18px leading-[160%]
+}
+.about-info__desc span{
+    @apply font-medium text-24px leading-[120%] mb-[40px] block
+}
+.about-info__desc p:not(:last-child){
+    @apply mb-[40px]
+}
+.about-info__title{
+    @apply mb-[100px]
+}
+.about-info__right {
+    @apply flex items-center
+}
+.about-info__img-container{
+    @apply max-w-[424px]
+}
+.about-gallery{
+    @apply mt-[100px]
+}
+
+@media(min-width:1280px){
+    .about-info{
+        @apply gap-[75px];
+        grid-template-columns: 1.5fr 1fr;
+    }
+}

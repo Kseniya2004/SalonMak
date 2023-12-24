@@ -1,0 +1,76 @@
+.master-header__title{
+    @apply mb-[20px]
+}
+.master-header__desc{
+    @apply text-30px leading-[120%]
+}
+.master-content{
+    @apply mt-[44px]
+}
+.master-content__services-item{
+    list-style-image: url(../assets/img/lst.svg);
+}
+.master-content__services{
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-[70px] items-center justify-items-center lg:justify-items-start mb-[140px]
+}
+.master-content__services-left{
+    @apply flex flex-col
+}
+.master-content__services-tit{
+    @apply block font-medium text-24px leading-[120%] mb-[20px]
+}
+.master-content__services-list{
+    @apply sm:tracking-[0.04em] leading-[200%] ml-[35px]
+}
+.master-content__services-btn{
+    @apply mt-[60px] bg-red text-bej rounded-tl-[20px] rounded-br-[20px] px-[38px] py-[10px] self-center lg:self-start;
+    transition: 0.5s;
+}
+.master-content__services-btn:hover{
+    padding: 12px 44px 14px;
+    box-shadow: 0px 14px 8px -7px rgba(237, 32, 36, 0.3);
+}
+.master-content__services-img{
+    @apply rounded-tl-[60px] rounded-br-[60px] overflow-hidden w-fit
+}
+.master-content__services-img img{
+    @apply object-cover
+}
+.master-content__info-title{
+    @apply font-medium text-24px leading-[120%] mt-[60px] block
+}
+.master-content__info p{
+    @apply text-18px leading-[160%] mt-[20px]
+}
+.subtitle{
+    @apply font-medium text-32px leading-[120%] mt-[60px]
+}
+.master-content__works-title{
+    @apply mb-[116px]
+}
+.master-content__works-list {
+    @apply grid grid-cols-2 lg:grid-cols-3;
+    gap: 60px 30px;
+}
+.master-content__works-item{
+    @apply w-fit overflow-hidden rounded-tl-[60px] rounded-br-[60px]
+}
+.master-content__works-item img{
+    @apply object-cover
+}
+.master-content__works-item.work_mb{
+    @apply mt-[-60px] lg:mt-0
+}
+.master-content__works-item.work_dt{
+    @apply lg:mt-[-60px]
+}
+.master-content .swiper-slide:nth-child(even){
+    @apply mt-[-60px]
+}
+.master-content .swiper-slide{
+    @apply w-fit overflow-hidden rounded-tl-[60px] rounded-br-[60px]
+}
+
+.master-content .swiper-slide img{
+    @apply object-cover 
+}

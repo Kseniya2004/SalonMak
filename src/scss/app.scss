@@ -1,0 +1,142 @@
+/* Tailwind import */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Vendor */
+
+/* Components */
+/* Browser specific styles */
+@import 'dirty/hacks';
+
+
+/* Page layout */
+@import 'blocks/header';
+@import 'blocks/footer';
+@import "@fancyapps/ui/dist/fancybox.css";
+@import 'blocks/index';
+@import 'blocks/contacts';
+@import 'blocks/prices';
+@import 'blocks/about';
+@import 'blocks/masters';
+@import 'blocks/master';
+@import 'blocks/services-section';
+@import 'blocks/services';
+@import 'blocks/service';
+@import 'blocks/products';
+@import 'blocks/products-catalog';
+
+/* Pages styles */
+@import 'demo';
+
+
+@import 'popups/css/popupS.css';
+
+@import 'wowjs/css/libs/animate.css';
+//@import 'swiper/swiper.scss';
+
+// @import url("choices.js/public/assets/styles/base.css");
+// @import url("choices.js/public/assets/styles/base.min.css");
+// @import url("choices.js/public/assets/styles/choices.css");
+// @import url("choices.js/public/assets/styles/choices.min.css");
+
+
+
+body{
+    @apply bg-bej text-black z-0;
+    font-family: 'PlayfairDisplay';
+}
+p{
+    @apply font-['Rubik']
+}
+.wrapper-section{
+    @apply pt-[150px] pb-[90px]
+}
+.img-flowers{
+    @apply absolute z-[-1]
+}
+.img-flower{
+    @apply hidden 2lg:block fixed
+}
+.modal-menu__wrapper {
+    @apply block fixed pt-[100px] left-0 top-0 w-full h-full overflow-auto px-[36px]; 
+    transition: all 0.3s ease-in-out;
+}
+.modal-menu__wrapper.close{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+.modal-menu__wrapper.close .modal-menu__block {
+    transform: translateY(50px);
+}
+.modal-menu__wrapper.open{
+    @apply z-[3];
+    background: rgba(35, 31, 32, 0.2);
+    visibility: visible;
+    opacity: 1;
+}
+.modal-menu__wrapper.open .modal-menu__block {
+    transform: translateY(0px);
+}
+.modal-menu__block{
+    @apply bg-bej rounded-tl-[20px] rounded-br-[20px] m-auto py-[40px] relative;
+    transition: all 0.4s ease-in-out;
+}
+.modal-menu__section{
+    @apply flex flex-col justify-center items-center
+}
+.modal-menu__item {
+    @apply flex flex-col text-center;
+}
+.modal-menu__item.networks{
+    @apply flex-row
+}
+.modal-menu__link:not(:last-child){
+    @apply mb-[20px] sm:mb-[33px]
+}
+.modal-menu__item.networks{
+    @apply my-[39px]
+}
+.modal-menu__item.modal-menu__sheldule{
+    @apply mb-[15px] text-darkbej
+}
+.modal-menu__item.networks a:first-child{
+    @apply mr-[13px]
+}
+.modal-menu__link{
+    @apply hover:text-red text-18px;   
+    transition: 0.5s; 
+}
+.modal-menu__btn{
+    @apply bg-red text-bej rounded-tl-[20px] rounded-br-[20px] px-[38px] py-[10px];
+    transition: 0.5s;
+}     
+.modal-menu__btn:hover{
+    padding: 12px 44px 14px;
+    box-shadow: 0px 14px 8px -7px rgba(237, 32, 36, 0.3);
+}   
+.modal-menu__item:last-child{
+    @apply h-[47px]
+}
+.modal-menu__close {
+    @apply absolute top-[10px] right-[10px] p-[10px]
+}
+.img-background{
+    @apply absolute z-[-1] top-0 object-cover min-h-[350px] w-full
+}

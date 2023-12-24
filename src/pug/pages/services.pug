@@ -1,0 +1,70 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Услуги';
+  - var description = 'Страница контакты';
+  - var pageClass = 'index';
+  
+
+
+block content
+    .services.wrapper-section
+        img(src="../assets/img/background/bg-contacts.png").services-background.img-background
+        .container
+            .services-wrapper
+                .services-header
+                    h1.services-header__title.title Уход за волосами
+                    .services-header__search-block 
+                        input(type="text" placeholder="Найти услугу").services-header__search-input
+                        .services-header__search-button.btn Найти
+                .services-content 
+                    .services__content-list 
+                        .services__content-item
+                            a(href="/service.html").services__item-img
+                                img(src="../assets/img/services/subservices_1.png")
+                            .services__item-content 
+                                a(href="/service.html").services__item-title Тонирование волос Chrom
+                                .services__item-info 
+                                    .services__item-price 2 400 000 ₽ 
+                                    button.services__item-empty Запись
+                        .services__content-item
+                            a(href="/service.html").services__item-img
+                                img(src="../assets/img/services/subservices_2.png")
+                            .services__item-content 
+                                a(href="/service.html").services__item-title Водорослевое обертывание волос
+                                .services__item-info 
+                                    .services__item-price 2 400 000 ₽ 
+                                    button.services__item-empty Запись
+                        .services__content-item
+                            a(href="/service.html").services__item-img
+                                img(src="../assets/img/services/subservices_3.png")
+                            .services__item-content 
+                                a(href="/service.html").services__item-title Ламинирование волос
+                                .services__item-info 
+                                    .services__item-price 2 400 000 ₽ 
+                                    button.services__item-empty Запись
+                        .services__content-item
+                            a(href="/service.html").services__item-img
+                                img(src="../assets/img/services/subservices_1.png")
+                            .services__item-content 
+                                a(href="/service.html").services__item-title Тонирование волос Chrom
+                                .services__item-info 
+                                    .services__item-price 2 400 000 ₽ 
+                                    button.services__item-empty Запись
+                        .services__content-item
+                            a(href="/service.html").services__item-img
+                                img(src="../assets/img/services/subservices_2.png")
+                            .services__item-content 
+                                a(href="/service.html").services__item-title Тонирование волос Chrom
+                                .services__item-info 
+                                    .services__item-price 2 400 000 ₽ 
+                                    button.services__item-empty Запись
+                        .services__content-item
+                            a(href="/service.html").services__item-img
+                                img(src="../assets/img/services/subservices_3.png")
+                            .services__item-content 
+                                a(href="/service.html").services__item-title Тонирование волос Chrom
+                                .services__item-info 
+                                    .services__item-price 2 400 000 ₽ 
+                                    button.services__item-empty Запись
+                        

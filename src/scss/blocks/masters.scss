@@ -1,0 +1,76 @@
+.masters-content{
+    @apply mt-[60px]
+}
+
+//items
+.masters-content__list {
+    @apply grid md:px-[80px] gap-[30px] grid-cols-1 grid-rows-3 2lg:grid-rows-1;
+}
+.masters__item{
+    @apply relative max-h-[605px] max-w-[544px] lg:min-h-[650px] justify-self-center;
+}
+.masters__item:nth-child(3n-1){
+    @apply 2lg:mb-[-40px] 2lg:mt-[40px]
+}
+.masters__item:nth-child(3n-1) .masters__item-content{
+    @apply 2lg:bottom-[88px] 2lg:left-[-89px];
+}
+.masters__item-img{
+    @apply rounded-br-[60px] rounded-tl-[60px] overflow-hidden h-full
+}
+.masters__item-img img{
+    @apply h-full object-cover 
+}
+
+.masters__item-content {
+    @apply absolute 2lg:rotate-[-90deg] 2lg:bottom-[123px] 2lg:left-[-122px]
+    w-min md:bottom-[40px] md:left-[-84px] rotate-0
+    bottom-[10px] left-[-10px];
+    transition: all 0.4s ease-in-out;
+}
+.masters__item-title{
+    @apply 2lg:bg-darkbej text-bej py-[12px] px-[20px] text-[32px] leading-[37px] w-fit mb-[12px] 2lg:rounded-bl-[20px] 2lg:rounded-tr-[20px]
+    bg-black whitespace-nowrap rounded-br-[20px] rounded-tl-[20px] 2lg:rounded-br-[0px] 2lg:rounded-tl-[0px];
+}
+.masters__item-desc{
+    @apply text-16px leading-[19px] text-darkbej py-[24px] px-[34px] bg-bej2 rounded-br-[20px] rounded-tl-[20px]
+    block 2lg:invisible 2lg:opacity-0 2lg:absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+.masters__item:hover .masters__item-content{
+    @apply w-min md:bottom-[40px] md:left-[-84px] rotate-0
+    bottom-[10px] left-[-10px];
+   
+}
+.masters__item:hover .masters__item-title{
+    @apply bg-black whitespace-nowrap rounded-br-[20px] rounded-tl-[20px];
+    border-radius: 20px 0px;
+}
+.masters__item:hover .masters__item-desc{
+    @apply visible opacity-[1] relative;;
+}
+.masters__item:first-child .masters__item-content{
+    @apply 2lg:bottom-[126px] 2lg:left-[-126px];
+}
+.masters-content__list{
+    @apply mb-[30px] 2lg:mb-[100px]
+}
+
+@media(min-width:1280px){
+    .masters-content__list:has(.masters__item:nth-child(3n-2):hover) {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .masters-content__list:has(.masters__item:nth-child(3n-1):hover) {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .masters-content__list:has(.masters__item:nth-child(3n):hover) {
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    .masters-content__list {
+        @apply grid md:px-[80px] gap-[30px] grid-cols-1;
+        grid-template-columns: 1fr 1fr 1fr;
+        transition: all 0.4s ease-in-out;
+    }
+}

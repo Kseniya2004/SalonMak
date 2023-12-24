@@ -1,0 +1,23 @@
+.products-content{
+    @apply mt-[160px]
+}
+.products__content-list{
+    @apply grid grid-cols-1 md:grid-cols-2 2lg:grid-cols-3 gap-y-[60px] gap-x-[30px]
+}
+.products__content-item{
+    @apply bg-bej2 hover:bg-awc rounded-br-[60px] rounded-tl-[60px] px-[53px] pb-[40px]
+    flex flex-col items-center max-w-[406px] h-fit mt-[50px] md:mt-0; 
+    transition: 0.3s;
+}
+.products__content-item:nth-child(even){
+    @apply md:mt-[50px] 2lg:mt-0
+}
+.products__content-item:nth-child(3n-1){
+    @apply 2lg:mt-[50px]
+}
+.products__item-img{
+    @apply max-w-[259px] mt-[-100px] mb-[30px]
+}
+.products__item-title{
+    @apply text-[24px]
+}
