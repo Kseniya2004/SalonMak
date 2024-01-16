@@ -4,7 +4,7 @@
 
 //items
 .masters-content__list {
-    @apply grid md:px-[80px] gap-[30px] grid-cols-1 grid-rows-3 2lg:grid-rows-1;
+    @apply grid md:px-[80px] gap-[30px] grid-cols-1 2lg:grid-rows-1;
 }
 .masters__item{
     @apply relative max-h-[605px] max-w-[544px] lg:min-h-[650px] justify-self-center;
@@ -69,7 +69,7 @@
     }
 
     .masters-content__list {
-        @apply grid md:px-[80px] gap-[30px] grid-cols-1;
+        @apply grid md:px-[80px] gap-[30px];
         grid-template-columns: 1fr 1fr 1fr;
         transition: all 0.4s ease-in-out;
     }

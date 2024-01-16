@@ -58,7 +58,7 @@
 
 
 body{
-    @apply bg-bej text-black z-0;
+    @apply bg-bej text-black;
     font-family: 'PlayfairDisplay';
 }
 p{
@@ -71,7 +71,7 @@ p{
     @apply absolute z-[-1]
 }
 .img-flower{
-    @apply hidden 2lg:block fixed
+    @apply hidden 2lg:block fixed h-full;
 }
 .modal-menu__wrapper {
     @apply block fixed pt-[100px] left-0 top-0 w-full h-full overflow-auto px-[36px]; 
